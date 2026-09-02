@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human Equation — Vincent Fouquereau</title>
+  <meta name="description" content="Human Equation: a video series where Vincent Fouquereau breaks down the concepts that brought him success in his career.">
+  <link rel="icon" href="assets/img/vf-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav-brand" href="index-en.html">
+        <img src="assets/img/vf-logo.png" alt="Vincent Fouquereau logo">
+        <span>Vincent Fouquereau</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index-en.html#contact">Where to find me</a></li>
+          <li><a href="equation-humaine-en.html">Human Equation</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Choose language">
+          <a href="equation-humaine.html" lang="fr" hreflang="fr">FR</a>
+          <a href="equation-humaine-en.html" class="active" aria-current="true" lang="en" hreflang="en">EN</a>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-alt">
+      <div class="hero-inner container">
+        <h1>Human Equation</h1>
+        <p>A series of short videos that analyze and explain some of the concepts that brought me success in my career. Let’s talk and relax — hopefully you can draw some success from them too.</p>
+      </div>
+      <div class="hero-photo container">
+        <img src="assets/img/equation-humaine.jpg" alt="Human Equation series preview">
+      </div>
+      <div class="hero-band"></div>
+    </section>
+
+    <!-- YouTube playlist -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>The videos</h2>
+          <p>Browse the playlist on my YouTube channel to watch the episodes.</p>
+          <p style="margin-top: 1.75rem;">
+            <a class="btn btn-dark" href="https://www.youtube.com/playlist?list=PLRLaMAbrxqHl4jPm_Z-6nYGRCulAA4NbI" target="_blank" rel="noopener">YouTube</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Got an idea? -->
+    <section class="section" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="split">
+          <img src="assets/img/idee.jpg" alt="Exchanging ideas over a conversation">
+          <div>
+            <h2>Got an idea?</h2>
+            <p>Is there a particular topic you’d like me to cover, or an idea for a new series of episodes? I’d love to hear from you — that’s the whole point!</p>
+            <a class="btn btn-primary" href="index-en.html#contact">Where to find me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Make decisions by knowing rather than guessing.</p>
+      <small>© <span id="year">2026</span> Vincent Fouquereau</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

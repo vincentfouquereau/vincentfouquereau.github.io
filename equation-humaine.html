@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Équation Humaine — Vincent Fouquereau</title>
+  <meta name="description" content="Équation Humaine : une série de capsules vidéo où Vincent Fouquereau analyse les concepts qui lui ont apporté du succès dans sa carrière.">
+  <link rel="icon" href="assets/img/vf-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/img/vf-logo.png" alt="Logo Vincent Fouquereau">
+        <span>Vincent Fouquereau</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html#contact">Où me trouver</a></li>
+          <li><a href="equation-humaine.html">Équation Humaine</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Choisir la langue">
+          <a href="index.html" class="active" aria-current="true" lang="fr" hreflang="fr">FR</a>
+          <a href="index-en.html" lang="en" hreflang="en">EN</a>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-alt">
+      <div class="hero-inner container">
+        <h1>Équation Humaine</h1>
+        <p>Une série de capsules qui analysent et expliquent certains concepts qui m’ont apporté du succès dans ma carrière. Discutons et relaxons en espérant que tu puisses aussi en tirer du succès.</p>
+      </div>
+      <div class="hero-photo container">
+        <img src="assets/img/equation-humaine.jpg" alt="Aperçu de la série Équation Humaine">
+      </div>
+      <div class="hero-band"></div>
+    </section>
+
+    <!-- Playlist YouTube -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Les capsules</h2>
+          <p>Consultez la liste de lecture sur ma chaîne YouTube pour visionner les capsules.</p>
+          <p style="margin-top: 1.75rem;">
+            <a class="btn btn-dark" href="https://www.youtube.com/playlist?list=PLRLaMAbrxqHl4jPm_Z-6nYGRCulAA4NbI" target="_blank" rel="noopener">YouTube</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Une idée ? -->
+    <section class="section" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="split">
+          <img src="assets/img/idee.jpg" alt="Échange d’idées autour d’une conversation">
+          <div>
+            <h2>Une idée&nbsp;?</h2>
+            <p>Est-ce que vous aimeriez que j’aborde un sujet en particulier ou vous avez une idée pour une nouvelle série de capsules&nbsp;? J’aimerais vous entendre, c’est le but de l’exercice&nbsp;!</p>
+            <a class="btn btn-primary" href="index.html#contact">Où me trouver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prendre les décisions en sachant plutôt qu’en devinant.</p>
+      <small>© <span id="year">2026</span> Vincent Fouquereau</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
