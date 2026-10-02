@@ -1,0 +1,20 @@
+{
+  "name": "Vincent Fouquereau — Mentor et stratège",
+  "short_name": "V. Fouquereau",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/vf-logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#8db9c9",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

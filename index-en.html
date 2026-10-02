@@ -3,39 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com; connect-src 'self'">
+  <meta name="theme-color" content="#8db9c9">
   <title>Vincent Fouquereau — Mentor and strategist</title>
   <meta name="description" content="Vincent Fouquereau turns complexity into clarity: mentor and strategist, he helps leaders move from “I believe” to “I know” through real transparency.">
-  <link rel="icon" href="assets/img/vf-logo.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap">
+  <link rel="canonical" href="https://www.fouquereau.com/index-en.html">
+  <link rel="alternate" hreflang="fr" href="https://www.fouquereau.com/">
+  <link rel="alternate" hreflang="en" href="https://www.fouquereau.com/index-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.fouquereau.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vincent Fouquereau">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:locale:alternate" content="fr_CA">
+  <meta property="og:title" content="Vincent Fouquereau — Mentor and strategist">
+  <meta property="og:description" content="Mentor and strategist: moving from “I believe” to “I know” through real transparency.">
+  <meta property="og:url" content="https://www.fouquereau.com/index-en.html">
+  <meta property="og:image" content="https://www.fouquereau.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vincent Fouquereau, mentor and strategist">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vincent Fouquereau — Mentor and strategist">
+  <meta name="twitter:description" content="Moving from “I believe” to “I know” through real transparency.">
+  <meta name="twitter:image" content="https://www.fouquereau.com/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vincent Fouquereau",
+    "url": "https://www.fouquereau.com/index-en.html",
+    "image": "https://www.fouquereau.com/assets/img/vincent-2024.png",
+    "jobTitle": "Mentor and strategist",
+    "description": "Mentor and strategist specialized in ITIL4, COBIT, ITSM and accountability.",
+    "email": "mailto:vincent@fouquereau.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pointe-aux-Trembles",
+      "addressRegion": "QC",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/vincent-fouquereau/",
+      "https://bsky.app/profile/vfouquereau.bsky.social",
+      "https://www.youtube.com/playlist?list=PLRLaMAbrxqHl4jPm_Z-6nYGRCulAA4NbI"
+    ],
+    "knowsAbout": ["ITIL4", "COBIT", "ITSM", "Accountability", "Strategy", "Leadership"]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
       <a class="nav-brand" href="index-en.html">
-        <img src="assets/img/vf-logo.png" alt="Vincent Fouquereau logo">
+        <img src="assets/img/vf-logo.png" width="40" height="40" alt="Vincent Fouquereau logo">
         <span>Vincent Fouquereau</span>
       </a>
       <div class="nav-right">
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="index-en.html#contact">Where to find me</a></li>
           <li><a href="equation-humaine-en.html">Human Equation</a></li>
         </ul>
         <div class="lang-switch" role="group" aria-label="Choose language">
           <a href="index.html" lang="fr" hreflang="fr">FR</a>
-          <a href="index-en.html" class="active" aria-current="true" lang="en" hreflang="en">EN</a>
+          <a href="index-en.html" class="active" aria-current="page" lang="en" hreflang="en">EN</a>
         </div>
-        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <!-- Hero -->
     <section class="hero">
       <div class="hero-inner container">
@@ -43,7 +96,10 @@
         <p>I turn complexity into clarity and align talents toward lasting impact. Mentor and strategist, I help leaders move from “I believe” to “I know” by fostering real transparency: better-expressed expectations and better-shared progress. My expertise goes beyond theory to create meaning in chaos and anchor real, value-driven change.</p>
       </div>
       <div class="hero-photo container">
-        <img src="assets/img/vincent-2024.png" alt="Vincent Fouquereau, 2024">
+        <picture>
+          <source type="image/webp" srcset="assets/img/vincent-2024-736.webp 736w, assets/img/vincent-2024-1104.webp 1104w" sizes="(max-width: 820px) 92vw, 736px">
+          <img src="assets/img/vincent-2024.png" width="736" height="414" fetchpriority="high" decoding="async" alt="Vincent Fouquereau, 2024">
+        </picture>
       </div>
       <div class="hero-band"></div>
     </section>
@@ -53,23 +109,32 @@
       <div class="container">
         <div class="section-head">
           <h2>Experienced leader</h2>
-          <p>I bring more than 20 years of experience in cutting-edge industries, including telecommunications, finance and digital health. I have held key roles in operations, development and strategy, balancing these three focus areas to maximize my impact. With over 10 years of management experience, I practice empowering leadership, spotlighting talent, trust and coaching focused on concrete results.</p>
+          <p>I bring more than 20&nbsp;years of experience in cutting-edge industries, including telecommunications, finance and digital health. I have held key roles in operations, development and strategy, balancing these three focus areas to maximize my impact. With over 10&nbsp;years of management experience, I practice empowering leadership, spotlighting talent, trust and coaching focused on concrete results.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <img class="card-logo" src="assets/img/petal.png" alt="Petal Health logo">
+            <picture>
+              <source type="image/webp" srcset="assets/img/petal-104.webp 1x, assets/img/petal-208.webp 2x">
+              <img class="card-logo" src="assets/img/petal.png" width="104" height="102" loading="lazy" decoding="async" alt="Petal Health logo">
+            </picture>
             <h3>Petal Health</h3>
             <span class="card-tag">Digital Health</span>
             <p>Optimizes healthcare management with innovative digital solutions.</p>
           </article>
           <article class="card">
-            <img class="card-logo" src="assets/img/desjardins.png" alt="Desjardins logo">
+            <picture>
+              <source type="image/webp" srcset="assets/img/desjardins-104.webp 1x, assets/img/desjardins-208.webp 2x">
+              <img class="card-logo" src="assets/img/desjardins.png" width="104" height="119" loading="lazy" decoding="async" alt="Desjardins logo">
+            </picture>
             <h3>Desjardins</h3>
             <span class="card-tag">Finance</span>
             <p>Offers complete financial services for individuals and businesses in Canada.</p>
           </article>
           <article class="card">
-            <img class="card-logo" src="assets/img/videotron.png" alt="Vidéotron logo">
+            <picture>
+              <source type="image/webp" srcset="assets/img/videotron-104.webp 1x, assets/img/videotron-208.webp 2x">
+              <img class="card-logo" src="assets/img/videotron.png" width="104" height="104" loading="lazy" decoding="async" alt="Vidéotron logo">
+            </picture>
             <h3>Vidéotron</h3>
             <span class="card-tag">Telecommunications</span>
             <p>Provides Internet, mobile, television and phone services in Quebec.</p>
@@ -79,24 +144,33 @@
     </section>
 
     <!-- Areas of impact -->
-    <section class="section" style="background: var(--bg-soft);">
+    <section class="section section--soft">
       <div class="container">
         <div class="section-head">
           <h2>Areas of impact</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <img class="card-icon" src="assets/img/icone-itil.png" alt="ITIL4 and COBIT icon">
+            <picture>
+              <source type="image/webp" srcset="assets/img/icone-itil-60.webp 1x, assets/img/icone-itil-120.webp 2x">
+              <img class="card-icon" src="assets/img/icone-itil.png" width="60" height="60" loading="lazy" decoding="async" alt="ITIL4 and COBIT icon">
+            </picture>
             <h3>ITIL4 &amp; COBIT</h3>
             <p>Turning best practices into concrete levers. Structuring without rigidity, optimizing without restraint. My expertise turns these frameworks into actionable tools that create measurable, lasting value.</p>
           </article>
           <article class="card">
-            <img class="card-icon" src="assets/img/icone-itsm.png" alt="ITSM icon">
+            <picture>
+              <source type="image/webp" srcset="assets/img/icone-itsm-60.webp 1x, assets/img/icone-itsm-120.webp 2x">
+              <img class="card-icon" src="assets/img/icone-itsm.png" width="60" height="60" loading="lazy" decoding="async" alt="ITSM icon">
+            </picture>
             <h3>ITSM</h3>
             <p>Aligning IT with the business. Going beyond ticket management to build an efficient, transparent, empowering service where every action directly supports strategic objectives.</p>
           </article>
           <article class="card">
-            <img class="card-icon" src="assets/img/icone-reddition.png" alt="Accountability icon">
+            <picture>
+              <source type="image/webp" srcset="assets/img/icone-reddition-60.webp 1x, assets/img/icone-reddition-120.webp 2x">
+              <img class="card-icon" src="assets/img/icone-reddition.png" width="60" height="60" loading="lazy" decoding="async" alt="Accountability icon">
+            </picture>
             <h3>Accountability</h3>
             <p>Making things visible to act with certainty. Providing clear, contextualized, verifiable data so every decision rests on solid ground, turning uncertainty into controlled strategy.</p>
           </article>
@@ -114,8 +188,8 @@
           <div class="contact-card">
             <h3>On the web</h3>
             <ul class="contact-list">
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vincent-fouquereau/" target="_blank" rel="noopener">vincent-fouquereau</a></li>
-              <li><strong>BlueSky:</strong> <a href="https://bsky.app/profile/vfouquereau.bsky.social" target="_blank" rel="noopener">vfouquereau.bsky.social</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vincent-fouquereau/" target="_blank" rel="noopener noreferrer">vincent-fouquereau</a></li>
+              <li><strong>BlueSky:</strong> <a href="https://bsky.app/profile/vfouquereau.bsky.social" target="_blank" rel="noopener noreferrer">vfouquereau.bsky.social</a></li>
               <li><strong>Email:</strong> <a href="mailto:vincent@fouquereau.com">vincent@fouquereau.com</a></li>
               <li><strong>Professional office</strong></li>
               <li>Pointe-aux-Trembles</li>
@@ -124,7 +198,11 @@
             </ul>
           </div>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13322.374973191596!2d-73.51140127601977!3d45.64243368908757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8e17e58e7310d%3A0xe6ad22cc259731d2!2sPointe-aux-Trembles%2C%20Montr%C3%A9al%2C%20QC!5e1!3m2!1sfr!2sca!4v1739678477438!5m2!1sfr!2sca" title="Map — Pointe-aux-Trembles, Montreal" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13322.374973191596!2d-73.51140127601977!3d45.64243368908757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8e17e58e7310d%3A0xe6ad22cc259731d2!2sPointe-aux-Trembles%2C%20Montr%C3%A9al%2C%20QC!5e1!3m2!1sfr!2sca!4v1739678477438!5m2!1sfr!2sca" title="Map — Pointe-aux-Trembles, Montreal" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <div class="map-consent">
+              <p>The map is provided by Google. Displaying it means you accept its terms and Google’s use of cookies.</p>
+              <button class="btn btn-dark" type="button" data-map-load>Show the map</button>
+            </div>
           </div>
         </div>
       </div>
@@ -135,12 +213,12 @@
     <div class="container">
       <p>Make decisions by knowing rather than guessing.</p>
       <small>© <span id="year">2026</span> Vincent Fouquereau</small>
+      <nav aria-label="Footer">
+        <a href="index-en.html">Home</a> · <a href="equation-humaine-en.html">Human Equation</a> · <a href="index-en.html#contact">Contact</a>
+      </nav>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+# Dépendances / divers
+.DS_Store
+Thumbs.db
+*.log
+
+# Outils
+.vscode/
+.idea/
+node_modules/
+
+# Clones de déploiement (jamais versionnés dans la source)
+/tmp/
