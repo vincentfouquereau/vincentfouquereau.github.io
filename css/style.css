@@ -243,13 +243,16 @@ section { scroll-margin-top: 5rem; }
 
 .hero-photo {
   margin: 3rem auto 0;
-  max-width: 46rem;
+  max-width: 21rem;
 }
 
 .hero-photo img {
   width: 100%;
-  border-radius: var(--radius) var(--radius) 0 0;
-  box-shadow: var(--shadow);
+  height: auto;
+}
+
+.hero-alt .hero-photo {
+  max-width: 46rem;
 }
 
 .hero-band {
